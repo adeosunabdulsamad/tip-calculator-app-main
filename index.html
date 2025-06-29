@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<header>
+<h1>SPLI<br>TTER</h1>
+</header>
+<main><form class="center-form">
+  <section class="input-section">
+  <label for="bill">Bill</label>
+  <div class="input-bill">
+  <img class="img-sign" src="./images/icon-dollar.svg" alt="dollar-sign">
+  <input type="number" id="number-bill" name="bill" placeholder="0" name="bill" min="0" max="10000" />
+  </div>
+  <p> Select Tip %</p>
+  <div class="radio">
+  <input type="radio" class="general" id="five-percent" name="query" value="5" required>
+  <label class="query-label" for="five-percent">5%</label>
+  
+  <input type="radio" class="general" id="ten-percent" name="query" value="10" required>
+  <label class="query-label" for="ten-percent">10%</label>
+  
+  <input type="radio" class="general" id="fifteen-percent" name="query" value="15" required>
+  <label class="query-label" for="fifteen-percent">15%</label>
+  
+  <input type="radio" class="general" id="twenty-five-percent" name="query" value="25" required>
+  <label class="query-label" for="twenty-five-percent">25%</label>
+  
+  <input type="radio" class="general" id="fifty-percent" name="query" value="50" required>
+  <label class="query-label" for="fifty-percent">50%</label>
+  
+  <input type="number" id="custom" placeholder="Custom" min="1" max="100" required>
+  </div>
+  <label for="people">Number of People</label>
+  <div class="people-input">
+  <img class="img-sign" src="./images/icon-person.svg" alt="people-sign">
+  <input type="number" id="number-people" name="people" placeholder="0" />
+  </div>
+  </section>
+  <section class="tip-calculated">
+  <section class="tip-amount"><div>
+  <p class="tip-amount-heavy">Tip Amount</p>
+  <p class="tip-amount-light">/ person</p></div>
+  <p id="tip-amount-person">$0.00</p></section>
+
+  <section class="tip-amount"><div>
+  <p class="tip-amount-heavy">Total</p>
+  <p class="tip-amount-light">/ person</p></div>
+  <p id="total-amount-person">$0.00</p></section>
+
+  <button class="button" type="reset">Reset</button>
+  </section>
+</form></main>  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+<script src="./index.js"></script>
+</html>
