@@ -6,6 +6,7 @@ let totalAmountPerson = document.getElementById("total-amount-person");
 let tipPercentage = document.getElementById("custom"); 
 let stringAmountPerPerson = "0.00";
 let stringTotalAmountPerson = "0.00";
+let resetButton = document.getElementById("button");
 tipPercentage.addEventListener("keypress", function(event) 
 {
     if (event.key === "Enter") {
@@ -25,8 +26,8 @@ tipPercentage.addEventListener("keypress", function(event)
         else {
             stringTotalAmountPerson = "0.00"
         };
-        tipAmountPerson.innerHTML = "$" + stringAmountPerPerson;
-        totalAmountPerson.innerHTML = "$" + stringTotalAmountPerson;
+        tipAmountPerson.textContent = "$" + stringAmountPerPerson;
+        totalAmountPerson.textContent = "$" + stringTotalAmountPerson;
     }
 });
 
@@ -56,8 +57,8 @@ bill.addEventListener("keypress", function(event)
         else {
             stringTotalAmountPerson = "0.00"
         };
-        tipAmountPerson.innerHTML = "$" + stringAmountPerPerson;
-        totalAmountPerson.innerHTML = "$" + stringTotalAmountPerson;
+        tipAmountPerson.textContent = "$" + stringAmountPerPerson;
+        totalAmountPerson.textContent = "$" + stringTotalAmountPerson;
     }
 });
 people.addEventListener("keypress", function(event) 
@@ -79,7 +80,13 @@ people.addEventListener("keypress", function(event)
         else {
             stringTotalAmountPerson = "0.00"
         };
-        tipAmountPerson.innerHTML = "$" + stringAmountPerPerson;
-        totalAmountPerson.innerHTML = "$" + stringTotalAmountPerson;
+        tipAmountPerson.textContent = "$" + stringAmountPerPerson;
+        totalAmountPerson.textContent = "$" + stringTotalAmountPerson;
     }
+});
+
+resetButton.addEventListener('click', function ()
+{
+    tipAmountPerson.textContent="$0.00";
+    totalAmountPerson.textContent="$0.00";
 });
