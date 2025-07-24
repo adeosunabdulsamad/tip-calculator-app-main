@@ -92,6 +92,9 @@ main {
 #custom:valid {
     border: 2px solid hsl(172, 67%, 45%);
 }
+#custom::placeholder{
+    font-size: 18px;
+}
 #number-bill,
 #number-people {
     background-color: hsl(189, 47%, 97%);
