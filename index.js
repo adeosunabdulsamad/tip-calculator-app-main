@@ -1,14 +1,12 @@
-let bill = document.getElementById('number-bill');
-let people = document.getElementById('number-people');
-let tipAmountPerson = document.getElementById('tip-amount-person');
-let totalAmountPerson = document.getElementById('total-amount-person');
-let tipPercentage = document.getElementById('custom'); 
-let stringAmountPerPerson = '0.00';
-let stringTotalAmountPerson = '0.00';
-let resetButton = document.getElementById('button');
+const bill = document.getElementById('number-bill');
+const people = document.getElementById('number-people');
+const tipAmountPerson = document.getElementById('tip-amount-person');
+const totalAmountPerson = document.getElementById('total-amount-person');
+const tipPercentage = document.getElementById('custom'); 
+const stringAmountPerPerson = '0.00';
+const stringTotalAmountPerson = '0.00';
+const resetButton = document.getElementById('button');
 const radios = document.querySelectorAll('.general');
-console.log(radios);
-const selectedRadio = Array.from(radios).find(radio => radio.checked);
 
 radios.forEach(radio => {radio.addEventListener('change', () => {
     if (radio.checked) {
@@ -36,7 +34,6 @@ function calculateTip() {
 
     if (selectedRadio) {
         tipPercentageValue = selectedRadio.value/100;
-        console.log(selectedRadio);
     }
     else if (tipPercentage.value !=='') {
         tipPercentageValue = tipPercentage.value/100;
