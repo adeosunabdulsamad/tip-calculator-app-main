@@ -3,8 +3,8 @@ const people = document.getElementById('number-people');
 const tipAmountPerson = document.getElementById('tip-amount-person');
 const totalAmountPerson = document.getElementById('total-amount-person');
 const tipPercentage = document.getElementById('custom'); 
-const stringAmountPerPerson = '0.00';
-const stringTotalAmountPerson = '0.00';
+let stringAmountPerPerson = '0.00';
+let stringTotalAmountPerson = '0.00';
 const resetButton = document.getElementById('button');
 const radios = document.querySelectorAll('.general');
 
